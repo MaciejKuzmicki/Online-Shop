@@ -1,5 +1,5 @@
 ﻿@page
-@model Projekt.CRUD.IndexModel
+@model Projekt.Pages.Users.MyItemsModel
 @{
 
 }
@@ -32,7 +32,7 @@
                         <h4 class="text-center">Search</h4>
                         <div class="mb-3">
                             <label class="form-label">Name</label>
-                            <input type="text" class="form-control form-control-lg" asp-for="Name" style="border-radius:30px" placeholder="Search by title">
+                            <input type="text" class="form-control form-control-lg" asp-for="Search" style="border-radius:30px" placeholder="Search by title">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Category</label>
@@ -71,7 +71,7 @@
                 @foreach (var item in Model.Item)
                 {
                     <div class="card" style="height:100%; padding:10px; border-radius:20px">
-                        <img src="data:image/jpg;base64,@item.ImageData" class="image img-fluid" alt="Item Image">
+                        <img src="data:image/jpg;base64,@item.ImageData" class="image img-fluid" alt="Item Image" style="height:600px">
                         <div class="card-body">
                             <h5 class="card-title" style="font-family:sans-serif">@item.Name</h5>
                             <ul class="list-group list-group-flush">

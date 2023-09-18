@@ -9,11 +9,7 @@ namespace Projekt
     {
         public Itemdb(DbContextOptions<Itemdb> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.UseSerialColumns();
-        }
-
+       
         public DbSet<Item> Itemos { get; set; }
 
     }

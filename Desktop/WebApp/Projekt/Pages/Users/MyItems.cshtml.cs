@@ -41,7 +41,7 @@ namespace Projekt.Pages.Users
 
 		public async Task OnGetAsync()
 		{
-			String listOfItems = HttpContext.Session.GetString("Items") ?? "";
+            String listOfItems = HttpContext.Session.GetString("Items") ?? "";
 			IList<int> itemsId = new List<int>();
             string[] parts = listOfItems.Split(':');
 			foreach (string part in parts)
@@ -52,6 +52,7 @@ namespace Projekt.Pages.Users
 					itemsId.Add(number);
 				}
 			}
+            
             if (Min > Max)
             {
                 errorMessage = "Min price cannot be higher than the max price";
@@ -66,7 +67,7 @@ namespace Projekt.Pages.Users
             }
 
 
-
+			
             if (_context.Itemos != null)
 			{
 				TempTemp = await _context.Itemos.ToListAsync();
@@ -118,6 +119,7 @@ namespace Projekt.Pages.Users
                         Item.RemoveAt(i);
                     }
                 }
+				
 
             }
 		}

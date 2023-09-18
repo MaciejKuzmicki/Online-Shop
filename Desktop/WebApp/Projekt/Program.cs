@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMvc().AddRazorPagesOptions(options => options.Conventions.AddPageRoute("/CRUD/Index", ""));
-builder.Services.AddDbContext<Itemdb>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("ItemDataBase")));
-builder.Services.AddDbContext<Userdb>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("ItemDataBase")));
+builder.Services.AddDbContext<Itemdb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ItemDataBase")));
+builder.Services.AddDbContext<Userdb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ItemDataBase")));
 builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkuzm\\Desktop\\WebApp\\Projekt\\Projekt.csproj": {}
+    "C:\\Users\\mkuzm\\Desktop\\Liveapp\\WebApplication\\Desktop\\WebApp\\Projekt\\Projekt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkuzm\\Desktop\\WebApp\\Projekt\\Projekt.csproj": {
+    "C:\\Users\\mkuzm\\Desktop\\Liveapp\\WebApplication\\Desktop\\WebApp\\Projekt\\Projekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkuzm\\Desktop\\WebApp\\Projekt\\Projekt.csproj",
+        "projectUniqueName": "C:\\Users\\mkuzm\\Desktop\\Liveapp\\WebApplication\\Desktop\\WebApp\\Projekt\\Projekt.csproj",
         "projectName": "Projekt",
-        "projectPath": "C:\\Users\\mkuzm\\Desktop\\WebApp\\Projekt\\Projekt.csproj",
+        "projectPath": "C:\\Users\\mkuzm\\Desktop\\Liveapp\\WebApplication\\Desktop\\WebApp\\Projekt\\Projekt.csproj",
         "packagesPath": "C:\\Users\\mkuzm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkuzm\\Desktop\\WebApp\\Projekt\\obj\\",
+        "outputPath": "C:\\Users\\mkuzm\\Desktop\\Liveapp\\WebApplication\\Desktop\\WebApp\\Projekt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,25 +46,21 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.3, )"
             },
             "SendGrid": {
               "target": "Package",
@@ -90,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
